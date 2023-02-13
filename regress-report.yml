@@ -1,0 +1,30 @@
+---
+test-cases:
+ ---
+- summary: |
+    Проверка фильтров по производителям
+  status: pass
+  
+  - summary: |
+    Проверка фильтров по категориям
+  status: pass
+
+- summary: |
+    Проверка фильтра цены
+  status: pass
+  
+  - summary: |
+    Проверка уведомления о том, что товар в корзине
+  status: fail
+
+bugreports:
+ - summary: |
+    Отсутствует уведомление о том, что товар в корзине.
+  environment: |
+    https://hexlet-products-store.vercel.app/, version 1, ПК, Windows11, браузер Chrome
+  steps-to-reproduce: |
+    Открыта страница https://hexlet-products-store.vercel.app/, Язык Русский, выбрать товар IPhone 9 и нажать на кнопку "В корзину"
+  expected-result: |
+    Уведомление "Товар IPhone 9, стоимость 477,85$ успешно добавлен в Корзину".
+  actual-result: |
+    Уведомления нет. В правом верхнем углу над кнопкой Корзина появляется цифра 1 в голубом кружке, не сразу заметная пользователю.
