@@ -5,7 +5,7 @@
   
   - summary: |
     Проверка фильтров по категориям
-  status: fail
+  status: pass
 
 - summary: |
     Проверка фильтра цены
