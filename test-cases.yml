@@ -1,53 +1,53 @@
 ---
 - summary: |
     Проверка фильтров по производителям
-  requirement: |
+requirement: |
     При поставленной галочке отображается товар выбранного производителя
-  prerequisites: |
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: |
+test-data: |
     Выбрать из списка производителей Apple
-  steps:
+steps:
     - Слева из списка призводителей ставим галочку ядом с надписью  Apple
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть на странице товаров только продукцию Apple
     
-   - summary: |
+- summary: |
     Проверка фильтров по категориям
-  requirement: |
+requirement: |
     При выбранной категории отображается только продукция, относящаяся к выбраной категории
-  prerequisites: |
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: |
+test-data: |
     Выбрать из списка категорий smartphones
-  steps:
+steps:
     - Слева из раскрывющегося списка ктагорий выбрать smartphones
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть на странице товаров только продукцию категории smartphones, тоесть смартфоны 
     
-    - summary: |
+- summary: |
     Проверка фильтра цены
-  requirement: |
+requirement: |
     При выбранном диапозоне цен, видны только товары, стоимость которых в заданных в рамках
-  prerequisites: |
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: |
+test-data: |
     Выбрать цену от 0 до 300
-  steps:
+steps:
     - Слева внизу в фильтре диапозона цен выбрать От 0 До 300
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть на странице товаров только товары, стоимость которых варьируется от 0 до 300 $
     
-    - summary: |
+- summary: |
     Проверка уведомления о том, что товар в корзине
-  requirement: |
+requirement: |
     При нажатии на кнопку "В корзину", отображается уведомление, что выбранный товар в корзине
-  prerequisites: |
+prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: |
+test-data: |
     Выбрать любой товар и добавить его в корзину, нажатием на кнопку "В корзину"
-  steps:
+steps:
     - Выбрать товар IPhone 9 и нажать на кнопку "В корзину"
-  expected-result: |
+expected-result: |
     Пользователь должен увидеть на экраме уведомление, что выбранный товар в корзине
     
