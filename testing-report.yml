@@ -1,16 +1,16 @@
 ---
 - summary: |
     Проверка фильтров по производителям
-  status: pass
+status: pass
   
-  - summary: |
+- summary: |
     Проверка фильтров по категориям
-  status: pass
+status: pass
 
 - summary: |
     Проверка фильтра цены
-  status: pass
+status: pass
   
-  - summary: |
+- summary: |
     Проверка уведомления о том, что товар в корзине
-  status: fail
+status: fail
